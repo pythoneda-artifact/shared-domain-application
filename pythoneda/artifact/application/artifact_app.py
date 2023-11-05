@@ -21,6 +21,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import asyncio
 from pythoneda.application import PythonEDA
 
+
 class ArtifactApp(PythonEDA):
     """
     Runs the Artifact PythonEDA realm.
@@ -33,6 +34,7 @@ class ArtifactApp(PythonEDA):
     Collaborators:
         - Command-line handlers from pythoneda-shared-pythoneda/domain-artifact-infrastructure
     """
+
     def __init__(self):
         """
         Creates a new ArtifactApp instance.
@@ -41,11 +43,12 @@ class ArtifactApp(PythonEDA):
         banner = None
         try:
             from pythoneda.artifact.application.artifact_banner import ArtifactBanner
+
             banner = ArtifactBanner()
         except ImportError:
             pass
-        from pythoneda.artifact import Artifact
         super().__init__(banner, __file__)
+
 
 if __name__ == "__main__":
     asyncio.run(ArtifactApp.main("pythoneda.artifact.application.ArtifactApp"))
