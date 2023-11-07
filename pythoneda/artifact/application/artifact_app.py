@@ -19,10 +19,12 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 import asyncio
-from pythoneda.application import PythonEDA
+from pythoneda.shared.artifact import LocalArtifact
+from pythoneda.shared.artifact.application import LocalArtifactApp
+from pythoneda.artifact.infrastructure import LocalDomainArtifact
 
 
-class ArtifactApp(PythonEDA):
+class ArtifactApp(LocalArtifactApp):
     """
     Runs the Artifact PythonEDA realm.
 
@@ -48,6 +50,15 @@ class ArtifactApp(PythonEDA):
         except ImportError:
             pass
         super().__init__(banner, __file__)
+
+    @classmethod
+    def local_artifact_class(cls) -> type[LocalArtifact]:
+        """
+        Retrieves the subclass of LocalArtifact.
+        :return: Such class.
+        :rtype: type[LocalArtifact]
+        """
+        return LocalDomainArtifact
 
 
 if __name__ == "__main__":
