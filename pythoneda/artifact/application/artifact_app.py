@@ -3,7 +3,7 @@ pythoneda/artifact/application/artifact_app.py
 
 This file defines the ArtifactApp class.
 
-Copyright (C) 2023-today rydnr's pythoneda-shared-pythoneda/domain-artifact-application
+Copyright (C) 2023-today rydnr's pythoneda-shared-pythoneda-artifact-def/domain-application
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
