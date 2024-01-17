@@ -1,10 +1,10 @@
 # vim: set fileencoding=utf-8
 """
-pythoneda/artifact/application/__init__.py
+pythoneda/artifact/shared/__init__.py
 
-This file ensures pythoneda.artifact.application is a namespace.
+This file ensures pythoneda.artifact.shared is a namespace.
 
-Copyright (C) 2023-today rydnr's pythoneda-shared-pythoneda-artifact-def/domain-application
+Copyright (C) 2023-today rydnr's pythoneda-artifact/shared-domain-application
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -20,5 +20,3 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 __path__ = __import__("pkgutil").extend_path(__path__, __name__)
-
-from .artifact_app import ArtifactApp
