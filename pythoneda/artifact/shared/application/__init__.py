@@ -1,10 +1,10 @@
 # vim: set fileencoding=utf-8
 """
-pythoneda/artifact/shared/domain/__init__.py
+pythoneda/artifact/shared/application/__init__.py
 
-This file ensures pythoneda.artifact.shared.domain is a namespace.
+This file ensures pythoneda.artifact.shared.application is a namespace.
 
-Copyright (C) 2023-today rydnr's pythoneda-artifact/shared-domain-application
+Copyright (C) 2023-today rydnr's pythoneda-shared-pythonlang-artf/application
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
