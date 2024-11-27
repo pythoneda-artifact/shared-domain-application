@@ -20,7 +20,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 import asyncio
-from pythoneda.shared.artifact import LocalArtifact
+from pythoneda.shared.artifact import AbstractArtifact
 from pythoneda.shared.artifact.application import LocalArtifactApp
 from pythoneda.artifact.shared.infrastructure import LocalDomainArtifact
 
@@ -32,7 +32,7 @@ class ArtifactApp(LocalArtifactApp):
     Class name: ArtifactApp
 
     Responsibilities:
-        - Runs the application for pythoneda-shared/domain artifact.
+        - Runs the application for pythoneda-shared-pythonlang/domain artifact.
 
     Collaborators:
         - Command-line handlers from pythoneda-shared-pythonlang-artf/infrastructure
@@ -55,7 +55,7 @@ class ArtifactApp(LocalArtifactApp):
         super().__init__(banner, __file__)
 
     @classmethod
-    def local_artifact_class(cls) -> type[LocalArtifact]:
+    def local_artifact_class(cls) -> type[AbstractArtifact]:
         """
         Retrieves the subclass of LocalArtifact.
         :return: Such class.
