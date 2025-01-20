@@ -65,7 +65,7 @@ class ArtifactApp(LocalArtifactApp):
 
 
 if __name__ == "__main__":
-    asyncio.run(ArtifactApp.main("pythoneda.artifact.shared.application.ArtifactApp"))
+    asyncio.run(ArtifactApp.main())
 # vim: syntax=python ts=4 sw=4 sts=4 tw=79 sr et
 # Local Variables:
 # mode: python
